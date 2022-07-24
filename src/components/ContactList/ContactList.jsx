@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+//import { array } from 'yup';
 import styles from './ContactList.module.css';
 
 export const ContactList = ({ data, onDeleteContact }) => {    
@@ -20,3 +22,12 @@ export const ContactList = ({ data, onDeleteContact }) => {
         </div>     
     )
 };
+
+ContactList.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    tel: PropTypes.string,
+    name: PropTypes.string
+  })),
+  onDeleteContact: PropTypes.func,
+}
