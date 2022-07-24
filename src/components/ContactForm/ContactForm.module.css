@@ -1,0 +1,14 @@
+.form {
+  display: inline-block;
+}
+
+.formLabel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.btnForm {
+    margin-top: 5px;
+}
+
